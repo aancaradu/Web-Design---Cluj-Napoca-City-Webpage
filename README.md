@@ -14,7 +14,7 @@ The fourth page, 'Sightseeing' - sightseeing.html, with the stylesheet sightseei
 The 'Services' page, services.html with stylesheet services.css is a presentation of restaurants, each anchor image taking us to the menu of said restaurant.<br><br>
 Lastly, the 'Education' page, education.html with the stylesheet education.css, talks a little about the mainn universities in Romania, providing anchor image polaroids taking us to the universities' sites.<br><br><br>
 
-In short:
+In short:<br>
 -Main Page (Cluj-Napoca): index.html , index.js ,  index.css br>
 -Contact: contact.html , contact.css<br>
 -Events: events.html , events.css<br>
