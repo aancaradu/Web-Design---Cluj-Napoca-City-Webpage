@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tw Cen MT", Arial, sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: #bab89d;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+  border-bottom: #000 solid 2px;
+  border-right: #000 solid 2px;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 25px;
+  font-size: 30px;
+}
+
+nav a:link:first-child {
+  margin-left: 100px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+a:active {
+  color: black;
+  font-style: italic;
+}
+
+/* Article */
+article {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  padding: 20px;
+}
+
+.copyright {
+  padding: 10px 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+/*polaroid style*/
+div.polaroid {
+  display: inline-block;
+  width: 34vw;
+  height: 70vh;
+  margin: 2.5% auto;
+  box-shadow: 0 0.4vh 0.8vh 0 rgba(0, 0, 0, 0.2),
+    0 0.6vh 2vh 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+div.polaroid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.description {
+  padding: 5vh 2vw;
+  text-align: center;
+}
+
+.row1 {
+  margin-left: 430px;
+  margin-top: 20px;
+  padding: 25px;
+  width: 65%;
+  height: 20%;
+  color: #fff;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*responsive grids*/
+.row2,
+.row3,
+.row4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-left: 7.5%;
+}
+
+.col1,
+.col2 {
+  padding: 20px;
+}
+
+/*responsive style*/
+
+@media (max-width: 1270px) and (min-width: 768px) {
+  div.polaroid {
+    height: 105vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  article {
+    flex-direction: column;
+  }
+
+  .row1 {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .row2,
+  .row3,
+  .row4 {
+    grid-template-columns: 1fr;
+    margin-left: 7.5%;
+  }
+
+  div.polaroid {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  div.description {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 500px) {
+  div.description {
+    font-size: 0.8em;
+  }
+}
