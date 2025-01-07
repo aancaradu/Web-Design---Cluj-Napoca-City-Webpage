@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tw Cen MT", Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #fafbf9;
+}
+
+article {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 25px;
+  font-size: 30px;
+}
+
+nav a:link:first-child {
+  margin-left: 100px;
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+a:active {
+  font-style: italic;
+  color: black;
+}
+
+div.polaroid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 220px;
+  grid-row: 1;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  border-bottom: #000 solid 2px;
+}
+
+.copyright {
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+div.polaroid {
+  display: inline-block;
+  width: 28vw;
+  margin-bottom: 2.5vh;
+  margin-top: 13%;
+  margin-left: 7.5%;
+  box-shadow: 0 0.4vh 0.8vh 0 rgba(0, 0, 0, 0.2),
+    0 0.6vh 2vh 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+div.name {
+  text-align: center;
+  padding: 1vh 2vw;
+}
+
+.row1 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+  column-gap: 2%;
+  margin-top: 2%;
+}
+.row2 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+  column-gap: 2%;
+}
+
+.row3 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+}
+
+.col {
+  padding-left: 30%;
+}
+.coll {
+  margin-top: -4.1%;
+}
+
+@media (max-width: 1200px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  div.polaroid {
+    width: 100vw;
+  }
+
+  .row1,
+  .row2,
+  .row3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+  }
+
+  .name {
+    padding: 1vh 2vw;
+    font-size: 14px;
+  }
+
+  .col,
+  .coll {
+    padding: 0%;
+    margin-right: 7%;
+    margin-top: 0%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .row1,
+  .row2,
+  .row3 {
+    gap: 10px;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  div.polaroid {
+    width: 90vw;
+    margin-left: -0.3%;
+  }
+
+  .col,
+  .coll {
+    margin-left: 7%;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+}
